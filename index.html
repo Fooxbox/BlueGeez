@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blue Geez — Indie Punk Rock Blues</title>
+  <meta name="description" content="Blue Geez — Roher Indie Punk Rock Blues. Musik, Termine und mehr.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">BLUE GEEZ</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">Über uns</a></li>
+        <li><a href="#members">Mitglieder</a></li>
+        <li><a href="#music">Musik</a></li>
+        <li><a href="#tour">Termine</a></li>
+        <li><a href="#gallery">Galerie</a></li>
+        <li><a href="#contact">Kontakt</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <section id="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="hero-title">BLUE<br><span>GEEZ</span></h1>
+      <p class="hero-tagline">Roher Sound. Keine Kompromisse.</p>
+      <div class="hero-cta">
+        <a href="#music" class="btn btn-primary">Jetzt reinhören</a>
+        <a href="#tour" class="btn btn-outline">Termine ansehen</a>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title">Über die Band</h2>
+      <div class="about-grid">
+        <div class="about-image">
+          <img src="pictures/Bandfoto.jpg" alt="Blue Geez Bandfoto" class="about-photo">
+        </div>
+        <div class="about-text">
+          <p class="about-lead">Sechs Musiker. Ein gemeinsamer Groove.</p>
+          <p>Blue Geez verbindet Indie-Rock mit Blues und einer Prise Punk — entspannt, eigenständig und mit viel Gefühl für den richtigen Moment. Gegründet 2021, machen wir Musik, die groovt, ohne sich aufzudrängen. Coole Gitarren, warme Keys, ein solides Fundament aus Bass und Drums und Gesang, der ehrlich klingt, weil er es ist.</p>
+          <p>Wir spielen, was uns gefällt. Und das hört man.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MUSIC ============ -->
+  <section id="music">
+    <div class="container">
+      <h2 class="section-title">Musik</h2>
+      <p class="section-subtitle">Hört einfach rein.</p>
+
+      <!-- YouTube Videos -->
+      <div class="video-grid">
+        <div class="video-card">
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/Z9WDAKG1dC8" title="Blue Geez - Video 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="video-card">
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/eVniW5wxCxI" title="Blue Geez - Video 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BAND MEMBERS ============ -->
+  <section id="members">
+    <div class="container">
+      <h2 class="section-title">Die Band</h2>
+      <p class="section-subtitle">Sechs Musiker. Ein Sound.</p>
+      <div class="members-grid">
+        <div class="member-card">
+          <div class="member-photo">
+            <img src="pictures/Members/Andreas.jpg" alt="Andreas" loading="lazy">
+          </div>
+          <h3 class="member-name">Andreas</h3>
+          <p class="member-role">Vocals</p>
+          <p class="member-desc">Die Stimme von Blue Geez. Andreas liefert mit roher Energie und ungeschliffener Leidenschaft den Gesang, der unter die Haut geht — irgendwo zwischen Whiskey-getränktem Blues und Punk-Schrei.</p>
+        </div>
+        <div class="member-card">
+          <div class="member-photo">
+            <img src="pictures/Members/Klaus.jpg" alt="Klaus" loading="lazy">
+          </div>
+          <h3 class="member-name">Klaus</h3>
+          <p class="member-role">Gitarre</p>
+          <p class="member-desc">Klaus lebt für die Gitarre. Seine Riffs jagen durch jeden Song wie ein Gewitter — fuzz-getränkt, kompromisslos und immer am Anschlag. Wenn er spielt, bleibt niemand stehen.</p>
+        </div>
+        <div class="member-card">
+          <div class="member-photo">
+            <img src="pictures/Members/Gert.jpg" alt="Gert" loading="lazy">
+          </div>
+          <h3 class="member-name">Gert</h3>
+          <p class="member-role">Gitarre</p>
+          <p class="member-desc">Gert ist die zweite Gitarren-Waffe im Arsenal. Die Doppel-Gitarren-Attacke mit Klaus verleiht dem Sound die Wucht und Tiefe, die Blue Geez so unverwechselbar macht.</p>
+        </div>
+        <div class="member-card">
+          <div class="member-photo">
+            <img src="pictures/Members/Wolfgang.jpg" alt="Wolfgang" loading="lazy">
+          </div>
+          <h3 class="member-name">Wolfgang</h3>
+          <p class="member-role">Keys &amp; Vocals</p>
+          <p class="member-desc">Wolfgang bringt mit Piano und Keyboards die melodische Seele in den Sound. Als zweite Stimme der Band sorgt er für die Harmonien, die aus jedem Song einen Gänsehaut-Moment machen.</p>
+        </div>
+        <div class="member-card">
+          <div class="member-photo">
+            <img src="pictures/Members/Markus.jpg" alt="Markus" loading="lazy">
+          </div>
+          <h3 class="member-name">Markus</h3>
+          <p class="member-role">Bass</p>
+          <p class="member-desc">Vier Saiten, mehr braucht Markus nicht. Sein Bass legt das Fundament — tief, dreckig und unerschütterlich. Er hält den Laden zusammen, wenn alle anderen ausrasten.</p>
+        </div>
+        <div class="member-card">
+          <div class="member-photo">
+            <img src="pictures/Members/Bj%C3%B6rn.jpg" alt="Björn" loading="lazy">
+          </div>
+          <h3 class="member-name">Björn</h3>
+          <p class="member-role">Schlagzeug</p>
+          <p class="member-desc">Björn ist der Motor hinter allem. Seine Drums treiben jeden Song mit unbändiger Kraft voran — präzise im Takt, brutal im Anschlag. Ohne ihn kein Beat, ohne Beat kein Blue Geez.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TOUR DATES ============ -->
+  <section id="tour">
+    <div class="container">
+      <h2 class="section-title">Termine</h2>
+      <p class="section-subtitle">Kommt vorbei. Bringt Ohrstöpsel mit.</p>
+      <div class="tour-list">
+
+        <div class="tour-item">
+          <div class="tour-date">
+            <span class="tour-month">APR</span>
+            <span class="tour-day">12</span>
+          </div>
+          <div class="tour-info">
+            <h3 class="tour-venue">Z-Bau</h3>
+            <p class="tour-location">Nürnberg</p>
+          </div>
+        </div>
+
+        <div class="tour-item">
+          <div class="tour-date">
+            <span class="tour-month">APR</span>
+            <span class="tour-day">26</span>
+          </div>
+          <div class="tour-info">
+            <h3 class="tour-venue">E-Werk</h3>
+            <p class="tour-location">Erlangen</p>
+          </div>
+        </div>
+
+        <div class="tour-item">
+          <div class="tour-date">
+            <span class="tour-month">MAI</span>
+            <span class="tour-day">10</span>
+          </div>
+          <div class="tour-info">
+            <h3 class="tour-venue">Kofferfabrik</h3>
+            <p class="tour-location">Fürth</p>
+          </div>
+        </div>
+
+        <div class="tour-item">
+          <div class="tour-date">
+            <span class="tour-month">MAI</span>
+            <span class="tour-day">24</span>
+          </div>
+          <div class="tour-info">
+            <h3 class="tour-venue">Live Club</h3>
+            <p class="tour-location">Bamberg</p>
+          </div>
+        </div>
+
+        <div class="tour-item">
+          <div class="tour-date">
+            <span class="tour-month">JUN</span>
+            <span class="tour-day">07</span>
+          </div>
+          <div class="tour-info">
+            <h3 class="tour-venue">MUZclub</h3>
+            <p class="tour-location">Nürnberg</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GALLERY ============ -->
+  <section id="gallery">
+    <div class="container">
+      <h2 class="section-title">Galerie</h2>
+      <p class="section-subtitle">Momente von unterwegs und auf der Bühne.</p>
+      <div class="gallery-grid">
+        <div class="gallery-item gallery-wide">
+          <img src="pictures/IMG20260328202502.jpg" alt="Blue Geez Live" loading="lazy">
+        </div>
+        <div class="gallery-item">
+          <img src="pictures/IMG_20210925_131125.jpg" alt="Blue Geez" loading="lazy">
+        </div>
+        <div class="gallery-item">
+          <img src="pictures/threema-20210925-203245172.jpg" alt="Blue Geez backstage" loading="lazy">
+        </div>
+        <div class="gallery-item">
+          <img src="pictures/1672212464149.jpg" alt="Blue Geez Auftritt" loading="lazy">
+        </div>
+        <div class="gallery-item gallery-wide">
+          <img src="pictures/IMG20260328192550.jpg" alt="Blue Geez Publikum" loading="lazy">
+        </div>
+        <div class="gallery-item">
+          <img src="pictures/IMG-20221112-WA0008.jpg" alt="Blue Geez live" loading="lazy">
+        </div>
+        <div class="gallery-item">
+          <img src="pictures/image-20212609-154214%20(1).jpeg" alt="Blue Geez Konzert" loading="lazy">
+        </div>
+        <div class="gallery-item">
+          <img src="pictures/image-20250212-084009-142.jpeg" alt="Blue Geez Performance" loading="lazy">
+        </div>
+        <div class="gallery-item">
+          <img src="pictures/IMG-20230918-WA0004.jpg" alt="Blue Geez unterwegs" loading="lazy">
+        </div>
+        <div class="gallery-item">
+          <img src="pictures/IMG_20221111_164128.jpg" alt="Blue Geez Session" loading="lazy">
+        </div>
+        <div class="gallery-item">
+          <img src="pictures/IMG_20230422_170018.jpg" alt="Blue Geez Probe" loading="lazy">
+        </div>
+        <div class="gallery-item">
+          <img src="pictures/IMG_20250109_162447.jpg" alt="Blue Geez Foto" loading="lazy">
+        </div>
+        <div class="gallery-item">
+          <img src="pictures/threema-20230423-144040247.jpg" alt="Blue Geez Moment" loading="lazy">
+        </div>
+        <div class="gallery-item">
+          <img src="pictures/threema-20230516-122753062.jpg" alt="Blue Geez Band" loading="lazy">
+        </div>
+        <div class="gallery-item gallery-wide">
+          <img src="pictures/threema-20230918-080238469.jpg" alt="Blue Geez Reise" loading="lazy">
+        </div>
+        <div class="gallery-item">
+          <img src="pictures/threema-20230918-164140233.jpg" alt="Blue Geez Abend" loading="lazy">
+        </div>
+        <div class="gallery-item">
+          <img src="pictures/threema-20231219-235213195.jpg" alt="Blue Geez off stage" loading="lazy">
+        </div>
+        <div class="gallery-item">
+          <img src="pictures/threema-20231223-175006452.jpg" alt="Blue Geez Weihnachten" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">Kontakt</h2>
+      <p class="section-subtitle">Booking, Presse oder einfach mal Hallo sagen.</p>
+      <div class="contact-grid">
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required placeholder="Dein Name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="you@email.com">
+          </div>
+          <input type="hidden" name="subject" value="Anfrage">
+          <div class="form-group">
+            <label for="message">Nachricht</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Was liegt dir auf dem Herzen?"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Nachricht senden</button>
+          <p class="form-status" id="formStatus"></p>
+        </form>
+        <div class="contact-info">
+          <div class="contact-detail">
+            <h3>Email</h3>
+            <p><a href="mailto:booking@bluegeez.com">booking@bluegeez.com</a></p>
+          </div>
+          <div class="contact-detail">
+            <h3>Folgt uns</h3>
+            <div class="social-links">
+              <a href="https://www.facebook.com/BlueGeez" target="_blank" rel="noopener" class="social-link" aria-label="Facebook">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+              </a>
+              <a href="https://www.instagram.com/blue.geez/" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+              </a>
+              <a href="https://www.youtube.com/channel/UCVVnZ5qmX1g-iMlt86bzmSg" target="_blank" rel="noopener" class="social-link" aria-label="YouTube">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p class="footer-logo">BLUE GEEZ</p>
+        <p class="footer-copy">&copy; 2026 Blue Geez. Alle Rechte vorbehalten.</p>
+        <div class="footer-links">
+          <a href="datenschutz.html">Datenschutz</a>
+          <a href="impressum.html">Impressum</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose">&times;</button>
+    <button class="lightbox-nav lightbox-prev" id="lightboxPrev">&#10094;</button>
+    <button class="lightbox-nav lightbox-next" id="lightboxNext">&#10095;</button>
+    <div class="lightbox-content" id="lightboxContent"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
