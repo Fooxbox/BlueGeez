@@ -4,6 +4,48 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
+  // ---------- YouTube 2-click consent ----------
+  const YOUTUBE_CONSENT_KEY = 'bluegeez-youtube-consent';
+
+  const loadYouTubeVideo = (wrapper) => {
+    const videoId = wrapper.dataset.videoId;
+    const title = wrapper.dataset.videoTitle || 'YouTube Video';
+    const iframe = document.createElement('iframe');
+    iframe.src = `https://www.youtube-nocookie.com/embed/${videoId}`;
+    iframe.title = title;
+    iframe.frameBorder = '0';
+    iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+    iframe.allowFullscreen = true;
+    wrapper.innerHTML = '';
+    wrapper.appendChild(iframe);
+  };
+
+  const videoWrappers = document.querySelectorAll('.video-wrapper[data-video-id]');
+
+  // If user previously consented, load all videos immediately
+  if (localStorage.getItem(YOUTUBE_CONSENT_KEY) === 'true') {
+    videoWrappers.forEach(loadYouTubeVideo);
+  } else {
+    // Attach click handlers to consent buttons
+    videoWrappers.forEach(wrapper => {
+      const btn = wrapper.querySelector('[data-action="load-video"]');
+      const checkbox = wrapper.querySelector('[data-action="remember-youtube"]');
+
+      if (btn) {
+        btn.addEventListener('click', () => {
+          // If "remember" is checked, save consent and load all videos
+          if (checkbox && checkbox.checked) {
+            localStorage.setItem(YOUTUBE_CONSENT_KEY, 'true');
+            videoWrappers.forEach(loadYouTubeVideo);
+          } else {
+            // Only load this single video
+            loadYouTubeVideo(wrapper);
+          }
+        });
+      }
+    });
+  }
+
   // ---------- Navbar scroll effect ----------
   const navbar = document.getElementById('navbar');
 
@@ -140,31 +182,44 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // ---------- Contact form ----------
+  // ---------- Contact form (Formspree) ----------
   const contactForm = document.getElementById('contactForm');
   const formStatus = document.getElementById('formStatus');
 
   contactForm.addEventListener('submit', (e) => {
     e.preventDefault();
 
-    // Simulate form submission
     const submitBtn = contactForm.querySelector('button[type="submit"]');
     const originalText = submitBtn.textContent;
     submitBtn.textContent = 'Wird gesendet...';
     submitBtn.disabled = true;
 
-    setTimeout(() => {
-      formStatus.textContent = 'Nachricht gesendet! Wir melden uns bald bei dir.';
-      formStatus.className = 'form-status success';
-      contactForm.reset();
+    fetch(contactForm.action, {
+      method: 'POST',
+      body: new FormData(contactForm),
+      headers: { 'Accept': 'application/json' }
+    })
+    .then(response => {
+      if (response.ok) {
+        formStatus.textContent = 'Nachricht gesendet! Wir melden uns bald bei dir.';
+        formStatus.className = 'form-status success';
+        contactForm.reset();
+      } else {
+        throw new Error('Serverfehler');
+      }
+    })
+    .catch(() => {
+      formStatus.textContent = 'Fehler beim Senden. Bitte versuche es erneut oder schreib uns direkt per E-Mail.';
+      formStatus.className = 'form-status error';
+    })
+    .finally(() => {
       submitBtn.textContent = originalText;
       submitBtn.disabled = false;
-
       setTimeout(() => {
         formStatus.textContent = '';
         formStatus.className = 'form-status';
-      }, 5000);
-    }, 1500);
+      }, 6000);
+    });
   });
 
   // ---------- Smooth scroll for anchor links ----------
