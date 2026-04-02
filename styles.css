@@ -775,6 +775,7 @@ section:nth-child(even) {
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 240px;
   gap: 0.5rem;
 }
 
@@ -783,7 +784,6 @@ section:nth-child(even) {
   overflow: hidden;
   border-radius: var(--radius);
   cursor: pointer;
-  aspect-ratio: 4/3;
 }
 
 .gallery-wide {
@@ -1187,6 +1187,7 @@ section:nth-child(even) {
 
   .gallery-grid {
     grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 220px;
   }
 
   .gallery-wide {
@@ -1258,6 +1259,7 @@ section:nth-child(even) {
 @media (max-width: 500px) {
   .gallery-grid {
     grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 180px;
   }
 
   .gallery-wide {
