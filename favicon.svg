@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Guitar pick background -->
+  <path d="M16 1C9.5 1 3.5 6.5 3.5 13.5C3.5 21.5 14.5 30.5 16 31C17.5 30.5 28.5 21.5 28.5 13.5C28.5 6.5 22.5 1 16 1Z" fill="#0a0a0f"/>
+  <!-- Gold border -->
+  <path d="M16 1C9.5 1 3.5 6.5 3.5 13.5C3.5 21.5 14.5 30.5 16 31C17.5 30.5 28.5 21.5 28.5 13.5C28.5 6.5 22.5 1 16 1Z" fill="none" stroke="#d4a03c" stroke-width="1.5"/>
+  <!-- BG monogram -->
+  <text x="16" y="20" font-family="Georgia, serif" font-size="12" font-weight="bold" fill="#d4a03c" text-anchor="middle" letter-spacing="-0.5">BG</text>
+</svg>

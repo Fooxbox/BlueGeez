@@ -725,6 +725,12 @@ section:nth-child(even) {
   line-height: 1;
 }
 
+.tour-year {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  letter-spacing: 0.05em;
+}
+
 .tour-info {
   flex: 1;
 }
@@ -737,6 +743,30 @@ section:nth-child(even) {
 .tour-location {
   color: var(--text-secondary);
   font-size: 0.9rem;
+}
+
+.tour-action {
+  margin-left: auto;
+}
+
+.tour-past {
+  opacity: 0.45;
+}
+
+.tour-tag {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+}
+
+.btn-sm {
+  padding: 0.4rem 1rem;
+  font-size: 0.8rem;
 }
 
 /* ============================================
